@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey</title>
+        <meta name="viewport" content="width=device-width, initial-scaled=1,user-scalable=no"/>
+        <link rel="stylesheet" type="text/css" href="survey.css">
+    </head>
+    <body>
+        <div class="header">
+            <nav>
+                 <ul>
+                     <li><a href="file:///C:/Users/Acer/Desktop/Proekt1.html">HOME</a></li>
+                     <li><a href="file:///C:/Users/Acer/Desktop/contact.html">CONTACT ME</a></li>
+                     <li><a href="file:///C:/Users/Acer/Desktop/music.html">MUSIC</a></li>
+                     <li><a href="file:///C:/Users/Acer/Desktop/movies1.html">MOVIES</a></li>
+                     <li><a href="file:///C:/Users/Acer/Desktop/gallery1.html">GALLERY</a></li>
+                     <li><a href="file:///C:/Users/Acer/Desktop/surrvey.html">SURVEY</a></li>
+                 </ul>
+                 <img src="menulogo.jpg" class="menu-icon">
+             </nav>
+        <div class="heading">
+            <h1 id="head">Please fill in this survey form</h1>
+            <h2 id="subheading"><i>Thank you for taking the time to help me improve my webpage</i></h2> 
+        </div>
+        <form>
+            <div id="content1">
+                <label>Name</label><br><br>
+                <input type="name" name="name" placeholder="Enter your name" class="box"><br><br>
+                <label>Email</.label><br><br>
+                <input type="email" name="email" placeholder="Enter your email" class="box"><br><br>
+                <label>Age(optionally)</label><br><br>
+                <input type="age" name="age" placeholder="Enter your age" class="box"><br><br>
+                <label>Which option best describes your current role?</label><br><br>
+           
+            <div id="optional">
+                <select>
+                    <option name="Select your role">Select Your Role</option>
+                    <option value="Student">Student</option>
+                    <option value="Full Time Job">Full Time Job</option>
+                    <option value="Full Time Learner">Full Time Learner</option>
+                    <option value="Prefer Not To Say">Prefer Not To Say</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div> 
+            <br>
+            <label id="head1">Would you recommend my website to a friend?</label><br><br>
+            <input type="radio" name="radio" class="larger">&nbsp&nbspDefinitely<br><br>
+            <input type="radio" name="radio" class="larger">&nbsp&nbspMaybe<br><br>
+            <input type="radio" name="radio" class="larger">&nbsp&nbspSure<br><br>
+            <label>What is your favourite part of my website?</label><br>
+            <div id="option2">
+                <select>
+                    <option name="Select an option">Select an option</option>
+                    <option value="Home part">Home Part</option>
+                    <option value="Music part">Music Part</option>
+                    <option value="Movies part">Movies Part</option>
+                    <option value="Gallery part">Gallery Part</option>
+                </select>
+            </div>
+            <br><br>
+            <label id="head2">Which part would you like to see improved?(Check all that apply)</label><br>
+            <div id="content2">
+                <input type="checkbox" name="checkbox" class="larger"><label>&nbsp&nbspHome Part</label><br><br>
+                <input type="checkbox" name="checkbox" class="larger"><label>&nbsp&nbspMusic Part</label><br><br>
+                <input type="checkbox" name="checkbox" class="larger"><label>&nbsp&nbspMovies Part</label><br><br>
+                <input type="checkbox" name="checkbox" class="larger"><label>&nbsp&nbspGallery Part</label><br><br>
+                <input type="checkbox" name="checkbox" class="larger"><label>&nbsp&nbspContact Me Part</label><br><br>
+                <input type="checkbox" name="checkbox" class="larger"><label>&nbsp&nbspSurvey Part</label><br><br>
+            </div>
+            <label id="head2">Any comments or suggestions</label><br><br>
+            <textarea placeholder="Enter Your Comment Here..."></textarea><br>
+            <button><h3>Submit</h3></button>
+        </form>
+    </body>
+</html>

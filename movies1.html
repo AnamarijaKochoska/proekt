@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <!----- CSS Linkage ----->
+    <link rel="stylesheet" href="movies.css">
+
+    <!----- Fontawesome Cdn Linkage ----->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="moviess.jpg" alt="img">
+        </div>
+        <ul>
+            <li><a href="file:///C:/Users/Acer/Desktop/Proekt1.html">HOME</a></li>
+            <li><a href="file:///C:/Users/Acer/Desktop/contact.html">CONTACT ME</a></li>
+            <li><a href="file:///C:/Users/Acer/Desktop/music.html">MUSIC</a></li>
+            <li><a href="file:///C:/Users/Acer/Desktop/movies1.html">MOVIES</a></li>
+            <li><a href="file:///C:/Users/Acer/Desktop/gallery1.html">GALLERY</a></li>
+            <li><a href="file:///C:/Users/Acer/Desktop/surrvey.html">SURVEY</a></li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <h1>The Notebook</h1>
+            <div class="tags">
+                <div class="tag">Romance</div>
+                <div class="tag">Drama</div>
+
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>Story</li>
+                    <li>Gallery</li>
+                    <li>Cast</li>
+                    <li>Info</li>
+                    <li><i class="fas fa-share-alt"></i></li>
+                </ul>
+            </div>
+            <p> Duke reads the story of Allie and Noah,
+                 two lovers who were separated by fate, to Ms Hamilton, an old woman who suffers from dementia,
+                  on a daily basis out of his notebook.</p>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <i class="fab fa-imdb big"></i>8.5
+            </div>
+            <div class="btn-box">
+                <a href="#"><i class="fab fa-google-play"onclick="toggle();">Watch Trailer</i></a>
+                <a href="#"><i class="fas fa-users"></i>Customer Review</a>
+            </div>
+        </div>
+    
+    <div class="trailer">
+        <video src="trailer.mp4" controls="true"></video>
+        <img src="close.png" class="close" onclick="toggle();">
+    </div></div>
+    <div class="more">
+        <div class="prev">
+            <img src="rewind.png" alt="img">
+        </div>
+        <img src="1va.jpg" alt="img">
+        <img src="2raa.jpg" alt="img">
+        <div class="next">
+            <img src="ff.png" alt="img">
+        </div>
+    </div>
+    <script type="text/javascript">
+        function toggle(){
+            var trailer= document.querySelector('.trailer');
+            var video= document.querySelector('video');
+            trailer.classList.toggle('active');
+            video.currentTime=0;
+            video.pause();
+        }
+    </script>
+</div>
+</div>
+</body>
+</html>
