@@ -9,12 +9,12 @@
         <div class="header">
             <nav>
                  <ul>
-                     <li><a href="file:///C:/Users/Acer/Desktop/Proekt1.html">HOME</a></li>
-                     <li><a href="file:///C:/Users/Acer/Desktop/contact.html">CONTACT ME</a></li>
-                     <li><a href="file:///C:/Users/Acer/Desktop/music.html">MUSIC</a></li>
-                     <li><a href="file:///C:/Users/Acer/Desktop/movies1.html">MOVIES</a></li>
-                     <li><a href="file:///C:/Users/Acer/Desktop/gallery1.html">GALLERY</a></li>
-                     <li><a href="file:///C:/Users/Acer/Desktop/surrvey.html">SURVEY</a></li>
+                     <li><a href="file:///C:/Users/Acer/Desktop/proekt%20oweb/Proekt1.html">HOME</a></li>
+                     <li><a href="file:///C:/Users/Acer/Desktop/proekt%20oweb/contact.html">CONTACT ME</a></li>
+                     <li><a href="file:///C:/Users/Acer/Desktop/proekt%20oweb/music.html">MUSIC</a></li>
+                     <li><a href="file:///C:/Users/Acer/Desktop/proekt%20oweb/movies1.html">MOVIES</a></li>
+                     <li><a href="file:///C:/Users/Acer/Desktop/proekt%20oweb/gallery1.html">GALLERY</a></li>
+                     <li><a href="file:///C:/Users/Acer/Desktop/proekt%20oweb/surrvey.html">SURVEY</a></li>
                  </ul>
                  <img src="menulogo.jpg" class="menu-icon">
              </nav>
@@ -26,7 +26,7 @@
             <div id="content1">
                 <label>Name</label><br><br>
                 <input type="name" name="name" placeholder="Enter your name" class="box"><br><br>
-                <label>Email</.label><br><br>
+                <label>Email</label><br><br>
                 <input type="email" name="email" placeholder="Enter your email" class="box"><br><br>
                 <label>Age(optionally)</label><br><br>
                 <input type="age" name="age" placeholder="Enter your age" class="box"><br><br>
@@ -69,7 +69,33 @@
             </div>
             <label id="head2">Any comments or suggestions</label><br><br>
             <textarea placeholder="Enter Your Comment Here..."></textarea><br>
-            <button><h3>Submit</h3></button>
+    
+            <div class="layout">
+                <div class="col2">
+                    <div class="box">
+                        <img src="happy.jpg" alt="happy" class="changeimg">
+                      
+                    </div>
+                </div>
+                <div class="col2">
+                    <ul id="ul1">
+                        <li> <img src="happy.jpg" alt="" class="thumbimg"></li>
+                        <li> <img src="sad.jpg" alt="" class="thumbimg"></li>
+                    </ul>
+                </div>
+            </div>
+            <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    $(".thumbimg").click(function(){
+                        $(".changeimg").attr('src',this.src);
+                        $(".changeimg").attr('alt',this.alt);
+                        $('.textcaption').text(this.alt);
+                    });
+                });
+            </script> 
+
+            <button id="btn1"><h3>Submit</h3></button>
         </form>
     </body>
 </html>

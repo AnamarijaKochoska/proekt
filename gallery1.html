@@ -12,36 +12,113 @@
 
 	<!-- Styles -->
     <link rel="stylesheet" type="text/css"  href="gallery.css" />
-
+    <script src="jquery.min.js"></script>
+    <script src="path/to/script/instastory.js"></script>
 </head>
 <body>
     <div class="header">
         <nav>
              <img src="logoAnamarija.png" class="logo"> 
              <ul>
-                <li><a href="file:///C:/Users/Acer/Desktop/Proekt1.html">HOME</a></li>
-                <li><a href="file:///C:/Users/Acer/Desktop/contact.html">CONTACT ME</a></li>
-                <li><a href="file:///C:/Users/Acer/Desktop/music.html">MUSIC</a></li>
-                <li><a href="file:///C:/Users/Acer/Desktop/movies1.html">MOVIES</a></li>
-                <li><a href="file:///C:/Users/Acer/Desktop/gallery1.html">GALLERY</a></li>
-                <li><a href="file:///C:/Users/Acer/Desktop/surrvey.html">SURVEY</a></li>
+                <li><a href="file:///C:/Users/Acer/Desktop/proekt%20oweb/Proekt1.html">HOME</a></li>
+                <li><a href="file:///C:/Users/Acer/Desktop/proekt%20oweb/contact.html">CONTACT ME</a></li>
+                <li><a href="file:///C:/Users/Acer/Desktop/proekt%20oweb/music.html">MUSIC</a></li>
+                <li><a href="file:///C:/Users/Acer/Desktop/proekt%20oweb/movies1.html">MOVIES</a></li>
+                <li><a href="file:///C:/Users/Acer/Desktop/proekt%20oweb/gallery1.html">GALLERY</a></li>
+                <li><a href="file:///C:/Users/Acer/Desktop/proekt%20oweb/surrvey.html">SURVEY</a></li>
              </ul>
              <img src="menulogo.jpg" class="menu-icon">
          </nav>
 <h1>Double tap to <i class="fa fa-heart"></i> the photo</h1>
 
-
 <div class="photo-box">
-    <div class="like-photo" style="background: url(pic1.jpg) no-repeat;"></div>
-    <div class="like-photo" style="background: url(pic2.png) no-repeat;"></div>
-    <div class="like-photo" style="background: url(pic3.jpg) no-repeat;"></div>    
-    <div class="like-photo" style="background: url(pic4.jfif) no-repeat;"></div> 
-    <div class="like-photo" style="background: url(pic5.jpg) no-repeat;"></div> 
-    <div class="like-photo" style="background: url(pic6.jpg) no-repeat;"></div> 
+    <div class="like-photo" style="background: url(pic1.jpg) no-repeat;" title="Skincare" > </div>
+
+        <div id="postedComment1"></div>
+    <div class="comments">
+    <form id="newcommen1">
+    <textarea id="commName1" type="text" maxlength="20" placeholder="Name"></textarea>
+    <br>
+    <textarea class="com" id="txcomment1" maxlength="100" placeholder="Your comment..."></textarea>
+    <br>
+    <button class="subm">Submit</button>
+    </form>
+</div> 
+    <div class="like-photo" style="background: url(pic2.png) no-repeat;" title="Wine"></div>
+    
+    <div id="postedComment1"></div>
+    <div class="comments">
+    <form id="newcommen1">
+    <textarea id="commName1" type="text" maxlength="20" placeholder="Name"></textarea>
+    <br>
+    <textarea class="com" id="txcomment1" maxlength="100" placeholder="Your comment..."></textarea>
+    <br>
+    <button class="subm">Submit</button>
+    </form>
+</div> 
+    <div class="like-photo" style="background: url(pic3.jpg) no-repeat;" title="Quote"></div> 
+    
+    <div id="postedComment1"></div>
+    <div class="comments">
+    <form id="newcommen1">
+    <textarea id="commName1" type="text" maxlength="20" placeholder="Name"></textarea>
+    <br>
+    <textarea class="com" id="txcomment1" maxlength="100" placeholder="Your comment..."></textarea>
+    <br>
+    <button class="subm">Submit</button>
+    </form>
+</div>    
+    <div class="like-photo" style="background: url(pic4.jfif) no-repeat;" title="Music"></div> 
+    
+    <div id="postedComment1"></div>
+    <div class="comments">
+    <form id="newcommen1">
+    <textarea id="commName1" type="text" maxlength="20" placeholder="Name"></textarea>
+    <br>
+    <textarea class="com" id="txcomment1" maxlength="100" placeholder="Your comment..."></textarea>
+    <br>
+    <button class="subm">Submit</button>
+    </form>
+</div> 
+    <div class="like-photo" style="background: url(pic5.jpg) no-repeat;" title="City"></div> 
+    
+    <div id="postedComment1"></div>
+    <div class="comments">
+    <form id="newcommen1">
+    <textarea id="commName1" type="text" maxlength="20" placeholder="Name"></textarea>
+    <br>
+    <textarea class="com" id="txcomment1" maxlength="100" placeholder="Your comment..."></textarea>
+    <br>
+    <button class="subm">Submit</button>
+    </form>
+</div> 
+    <div class="like-photo" style="background: url(pic6.jpg) no-repeat;" title="Model"></div> 
+    
+    <div id="postedComment1"></div>
+    <div class="comments">
+    <form id="newcommen1">
+    <textarea id="commName1" type="text" maxlength="20" placeholder="Name"></textarea>
+    <br>
+    <textarea class="com" id="txcomment1" maxlength="100" placeholder="Your comment..."></textarea>
+    <br>
+    <button class="subm">Submit</button>
+    </form>
+</div> 
   </div> 
 <h2>Number of likes <span id="count">0</span></h2> 
     </div>
  <!-- Scripts -->
+ <script>
+            $(function(){
+                $('img').mouseenter(function(){
+                    $(this).css('opacity','0.5');
+                });
+                $('img').mouseleave(function(){
+                    $(this).css('opacity','1');
+                });
+            });
+        </script>
  <script src="galleryJ.js"></script>
+
 </body>  
 </html>
